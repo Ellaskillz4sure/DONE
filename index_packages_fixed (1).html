@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Magnus — Trusted source for wealth creation</title>
+  <meta name="description" content="Magnus Platform — Earn online with smartphone tasks, streaming jobs, and ethical referrals. Fast NGN withdrawals and 24/7 support.">
+  <meta name="theme-color" content="#0B0B0F">
+
+  <!-- Tailwind (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            magnus: '#F97316',
+            magnus2: '#F59E0B',
+            obsidian: '#0B0B0F',
+            onyx: '#0F172A'
+          },
+          boxShadow: {
+            glow: '0 0 35px rgba(249,115,22,.45)',
+            card: '0 10px 30px rgba(0,0,0,.35)'
+          },
+          borderRadius: { '2-5xl': '1.35rem' },
+          keyframes: {
+            slide: { '0%': { transform: 'translateX(-8px)' }, '100%': { transform: 'translateX(0)' } },
+            fadeUp: { '0%': { opacity: 0, transform: 'translateY(15px)' }, '100%': { opacity: 1, transform: 'translateY(0)' } }
+          },
+          animation: {
+            fadeUp: 'fadeUp .8s ease forwards',
+            slide: 'slide .6s ease forwards'
+          },
+          backgroundImage: {
+            'magnus-grad':
+              'radial-gradient(60rem 60rem at 85% 10%, rgba(249,115,22,.18), transparent 55%),' +
+              'radial-gradient(60rem 60rem at 10% 85%, rgba(245,158,11,.14), transparent 55%)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root { color-scheme: dark; }
+    html { scroll-behavior: smooth; }
+    body { background:#0B0B0F; }
+    .glass {
+      background: linear-gradient(135deg, rgba(255,255,255,.10), rgba(255,255,255,.04));
+      border:1px solid rgba(255,255,255,.18);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    .sticky-blur { backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+      background: rgba(11,11,15,.55); border-bottom:1px solid rgba(255,255,255,.06);}
+  </style>
+</head>
+<body class="text-white antialiased bg-obsidian">
+
+  <!-- Layout: permanent sidebar on desktop, topbar on mobile (structure changed) -->
+  <div class="min-h-screen md:grid md:grid-cols-[280px_1fr]">
+
+    <!-- Sidebar -->
+    <aside class="hidden md:flex flex-col sticky top-0 h-screen p-6 gap-6 border-r border-white/10 bg-onyx/40">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-2xl shadow-glow overflow-hidden ring-1 ring-white/10">
+          <img src="MagnusLogo.jpg" alt="Magnus Logo" class="w-full h-full object-cover">
+        </div>
+        <span class="text-lg font-semibold tracking-wide">Magnus</span>
+      </div>
+      <nav class="flex flex-col gap-3 text-sm">
+        <a href="#hero" class="hover:text-magnus">Home</a>
+        <a href="#stats" class="hover:text-magnus">Stats</a>
+        <a href="#features" class="hover:text-magnus">Features</a>
+        <a href="#intro-cards" class="hover:text-magnus">Gallery</a>
+        <a href="#pricing" class="hover:text-magnus">Packages</a>
+        <a href="#faq" class="hover:text-magnus">FAQ</a>
+        <a href="#contact" class="hover:text-magnus">Contact</a>
+      </nav>
+      <a href="https://wa.me/2347045052056" class="mt-auto inline-block rounded-xl px-4 py-2 bg-magnus hover:bg-magnus2 transition shadow-glow text-sm font-semibold">Join Now</a>
+    </aside>
+
+    <!-- Main content -->
+    <main>
+
+      <!-- Mobile top bar -->
+      <header class="md:hidden sticky top-0 z-40 sticky-blur">
+        <div class="px-4 py-3 flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-2xl shadow-glow overflow-hidden ring-1 ring-white/10">
+              <img src="MagnusLogo.jpg" alt="Magnus Logo" class="w-full h-full object-cover">
+            </div>
+            <span class="text-lg font-semibold tracking-wide">Magnus</span>
+          </div>
+          <a href="https://wa.me/2347045052056" class="rounded-xl px-4 py-2 bg-magnus hover:bg-magnus2 transition shadow-glow text-sm font-semibold">Join Now</a>
+        </div>
+      </header>
+
+      <!-- Hero (restructured banner) -->
+      <section id="hero" class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-magnus-grad"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-16 md:py-24 relative">
+          <div class="grid lg:grid-cols-12 gap-10 items-center">
+            <div class="lg:col-span-7 space-y-5 animate-fadeUp">
+              <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+                <span class="text-white">Magnus</span>
+                <span class="block text-magnus">Trusted source for wealth creation</span>
+              </h1>
+              <p class="text-white/80 max-w-xl">
+                Earn online with smartphone tasks, streaming jobs, and ethical referrals.
+                Instant credits, transparent NGN withdrawals, and 24/7 support.
+              </p>
+              <div class="flex gap-3">
+                <a href="https://wa.me/2347045052056" class="inline-flex items-center gap-2 rounded-2xl px-5 py-3 bg-magnus hover:bg-magnus2 transition shadow-glow font-semibold">
+                  Register on WhatsApp
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/>
+                  </svg>
+                </a>
+                <a href="#features" class="inline-flex items-center gap-2 rounded-2xl px-5 py-3 bg-white/10 hover:bg-white/15 transition font-semibold ring-1 ring-white/15">
+                  See Features
+                </a>
+              </div>
+            </div>
+            <div class="lg:col-span-5 relative animate-slide">
+              <div class="glass rounded-2-5xl shadow-glow p-6 md:p-8">
+                <img src="MagnusLogo.jpg" alt="Magnus Poster" class="rounded-2-5xl shadow-card">
+              </div>
+              <div class="absolute -z-10 inset-0 blur-3xl opacity-40" style="background: radial-gradient(40rem 20rem at 70% 30%, rgba(249,115,22,.35), transparent 60%);"></div>
+            </div>
+            <!-- 7 -->
+            <figure class="glass rounded-2-5xl overflow-hidden shadow-card" >
+              <video title="Magnus preview 7" aria-label="Magnus preview 7" class="w-full h-48 object-cover" autoplay loop playsinline><source src="magnusvideo.mp4" type="video/mp4"></video>
+              <figcaption class="p-5">
+                <h1 class="text-xl md:text-2xl font-bold text-white mb-2">Magnus Platform?</h1>
+                <p class="text-white/80">MiAmor is a global platform that connects users, helps them earn income, and gain valuable skills through networking and empowerment.</p>
+              </figcaption>
+            </figure>
+            <!-- 8 -->
+            <figure class="glass rounded-2-5xl overflow-hidden shadow-card">
+              <video title="Magnus preview 8" aria-label="Magnus preview 8" class="w-full h-48 object-cover" autoplay loop playsinline><source src="magnusvideo.mp4" type="video/mp4"></video>
+              <figcaption class="p-5">
+                <h1 class="text-xl md:text-2xl font-bold text-white mb-2">Magnus Platform?</h1>
+                <p class="text-white/80">MiAmor is a global platform that connects users, helps them earn income, and gain valuable skills through networking and empowerment.</p>
+              </figcaption>
+            </figure>
+            <!-- 9 -->
+            <figure class="glass rounded-2-5xl overflow-hidden shadow-card">
+              <img src="assets/figure.jpg" alt="Magnus preview 9" class="w-full h-48 object-cover">
+              <figcaption class="p-5">
+                <h1 class="text-xl md:text-2xl font-bold text-white mb-2">Magnus Platform?</h1>
+                <p class="text-white/80">MiAmor is a global platform that connects users, helps them earn income, and gain valuable skills through networking and empowerment.</p>
+              </figcaption>
+            </figure>
+            <!-- 10 -->
+            <figure class="glass rounded-2-5xl overflow-hidden shadow-card">
+              <img src="assets/figure.jpg" alt="Magnus preview 10" class="w-full h-48 object-cover">
+              <figcaption class="p-5">
+                <h1 class="text-xl md:text-2xl font-bold text-white mb-2">Magnus Platform?</h1>
+                <p class="text-white/80">MiAmor is a global platform that connects users, helps them earn income, and gain valuable skills through networking and empowerment.</p>
+              </figcaption>
+            </figure>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats moved up (structure change) -->
+      <section id="stats" class="py-10">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-10">
+          <div class="glass rounded-2-5xl p-5 shadow-card flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div class="flex items-center gap-3">
+              <div class="w-11 h-11 rounded-xl bg-magnus/20 flex items-center justify-center ring-1 ring-magnus/30">⚡</div>
+              <div>
+                <div class="text-sm text-white/70">You've been credited by Magnus</div>
+                <div class="font-bold">₦5,000 <span class="text-xs text-white/60 font-normal">Instant • Daily streak +2</span></div>
+              </div>
+            </div>
+            <div class="text-sm text-white/70">Ref: MG-Z28YP • Today 12:32 AM</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section id="features" class="py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+          <h2 class="text-3xl md:text-4xl font-bold mb-8">Everything you need to earn</h2>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="glass rounded-2-5xl p-6 shadow-card">
+              <div class="w-12 h-12 rounded-xl bg-magnus/15 ring-1 ring-magnus/30 flex items-center justify-center mb-4">
+                <span class="text-magnus text-xl">💼</span>
+              </div>
+              <h3 class="font-semibold text-xl mb-2">Smartphone Tasks</h3>
+              <p class="text-white/80">Beginner-friendly tasks that convert into wallet credits.</p>
+            </div>
+            <div class="glass rounded-2-5xl p-6 shadow-card">
+              <div class="w-12 h-12 rounded-xl bg-magnus/15 ring-1 ring-magnus/30 flex items-center justify-center mb-4">
+                <span class="text-magnus text-xl">🎧</span>
+              </div>
+              <h3 class="font-semibold text-xl mb-2">Digital Marketing</h3>
+              <p class="text-white/80">Auto-credited listening and viewing via the Magnus Website.</p>
+            </div>
+            <div class="glass rounded-2-5xl p-6 shadow-card">
+              <div class="w-12 h-12 rounded-xl bg-magnus/15 ring-1 ring-magnus/30 flex items-center justify-center mb-4">
+                <span class="text-magnus text-xl">🤝</span>
+              </div>
+              <h3 class="font-semibold text-xl mb-2">Transparent Referrals</h3>
+              <p class="text-white/80">Ethical referral program with clear, instant credits.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Intro Figure Cards (kept text, different layout order) -->
+      <section id="intro-cards" class="py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+          <div class="grid md:grid-cols-3 gap-6">
+            <!-- 6 repeated figures with same text -->
+            <!-- 1 -->
+            <figure class="glass rounded-2-5xl overflow-hidden shadow-card" data-no-anim>
+              <img src="assets/figure.jpg" alt="Magnus preview 1" class="w-full h-48 object-cover">
+              <figcaption class="p-5">
+                <h1 class="text-xl md:text-2xl font-bold text-white mb-2">Magnus Platform?</h1>
+                <p class="text-white/80">MiAmor is a global platform that connects users, helps them earn income, and gain valuable skills through networking and empowerment.</p>
+                <a href="https://wa.me/2347045052056" class="mt-3 inline-block rounded-xl px-4 py-2 bg-magnus hover:bg-magnus2 transition shadow-glow text-sm font-semibold">Join Now</a>
+              </p>
+              </figcaption>
+            </figure>
+            <!-- 2 -->
+            <figure class="glass rounded-2-5xl overflow-hidden shadow-card">
+              <img src="assets/figure.jpg" alt="Magnus preview 2" class="w-full h-48 object-cover">
+              <figcaption class="p-5">
+                <h1 class="text-xl md:text-2xl font-bold text-white mb-2">Magnus Platform?</h1>
+                <p class="text-white/80">MiAmor is a global platform that connects users, helps them earn income, and gain valuable skills through networking and empowerment.</p>
+                <a href="https://wa.me/2347045052056" class="mt-3 inline-block rounded-xl px-4 py-2 bg-magnus hover:bg-magnus2 transition shadow-glow text-sm font-semibold">Join Now</a>
+              </p>
+              </figcaption>
+            </figure>
+            <!-- 3 -->
+            <figure class="glass rounded-2-5xl overflow-hidden shadow-card">
+              <img src="assets/figure.jpg" alt="Magnus preview 3" class="w-full h-48 object-cover">
+              <figcaption class="p-5">
+                <h1 class="text-xl md:text-2xl font-bold text-white mb-2">Magnus Platform?</h1>
+                <p class="text-white/80">MiAmor is a global platform that connects users, helps them earn income, and gain valuable skills through networking and empowerment.</p>
+                <a href="https://wa.me/2347045052056" class="mt-3 inline-block rounded-xl px-4 py-2 bg-magnus hover:bg-magnus2 transition shadow-glow text-sm font-semibold">Join Now</a>
+              </p>
+              </figcaption>
+            </figure>
+            <!-- 4 -->
+            <figure class="glass rounded-2-5xl overflow-hidden shadow-card">
+              <img src="assets/figure.jpg" alt="Magnus preview 4" class="w-full h-48 object-cover">
+              <figcaption class="p-5">
+                <h1 class="text-xl md:text-2xl font-bold text-white mb-2">Magnus Platform?</h1>
+                <p class="text-white/80">MiAmor is a global platform that connects users, helps them earn income, and gain valuable skills through networking and empowerment.</p>
+                <a href="https://wa.me/2347045052056" class="mt-3 inline-block rounded-xl px-4 py-2 bg-magnus hover:bg-magnus2 transition shadow-glow text-sm font-semibold">Join Now</a>
+              </p>
+              </figcaption>
+            </figure>
+            <!-- 5 -->
+            <figure class="glass rounded-2-5xl overflow-hidden shadow-card">
+              <img src="assets/figure.jpg" alt="Magnus preview 5" class="w-full h-48 object-cover">
+              <figcaption class="p-5">
+                <h1 class="text-xl md:text-2xl font-bold text-white mb-2">Magnus Platform?</h1>
+                <p class="text-white/80">MiAmor is a global platform that connects users, helps them earn income, and gain valuable skills through networking and empowerment.</p>
+                <a href="https://wa.me/2347045052056" class="mt-3 inline-block rounded-xl px-4 py-2 bg-magnus hover:bg-magnus2 transition shadow-glow text-sm font-semibold">Join Now</a>
+              </p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Packages (pricing) -->
+      <section id="pricing" class="py-16 md:py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
+          <h2 class="text-3xl md:text-4xl font-bold mb-8">Packages</h2>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="glass rounded-2-5xl p-6 shadow-card ring-2 ring-magnus/60">
+              <h3 class="font-semibold text-xl">Pro</h3>
+              <p class="text-white/75 mt-2 mb-5">Best for consistent earners and referrers.</p>
+              <ul class="text-white/80 space-y-2 text-sm">
+                <li>• Priority tasks + higher caps</li>
+                <li>• Enhanced streaming rates</li>
+                <li>• Support: Priority</li>
+              </ul>
+              <a href="https://wa.me/2347045052056" class="mt-6 inline-block w-full text-center rounded-xl py-2.5 bg-magnus hover:bg-magnus2 transition shadow-glow font-semibold">Join Now</a>
+            </div>
+            <div class="glass rounded-2-5xl p-6 shadow-card">
+              <h3 class="font-semibold text-xl">Standard</h3>
+              <p class="text-white/75 mt-2 mb-5">Great for beginners starting out.</p>
+              <ul class="text-white/80 space-y-2 text-sm">
+                <li>• Access to basic tasks</li>
+                <li>• Intro streaming rates</li>
+                <li>• Support: Basic</li>
+              </ul>
+              <a href="https://wa.me/2347045052056" class="mt-6 inline-block w-full text-center rounded-xl py-2.5 bg-magnus hover:bg-magnus2 transition shadow-glow font-semibold">Join Now</a>
+            </div>
+
+            <div class="glass rounded-2-5xl p-6 shadow-card">
+              <h3 class="font-semibold text-xl">Ultra</h3>
+              <p class="text-white/75 mt-2 mb-5">Maximize with premium tasks and bonuses.</p>
+              <ul class="text-white/80 space-y-2 text-sm">
+                <li>• Highest task payouts</li>
+                <li>• Streaming boost + streaks</li>
+                <li>• Support: 24/7</li>
+              </ul>
+              <a href="https://wa.me/2347045052056" class="mt-6 inline-block w-full text-center rounded-xl py-2.5 bg-magnus hover:bg-magnus2 transition shadow-glow font-semibold">Join Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="py-16">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-10">
+          <h2 class="text-3xl font-bold mb-8">FAQ</h2>
+          <div class="space-y-4">
+            <details class="glass rounded-xl p-4">
+              <summary class="cursor-pointer font-semibold">Is Magnus legit?</summary>
+              <p class="mt-2 text-white/80">Magnus focuses on transparent earnings with clear rules and on-time NGN withdrawals. Always review terms before joining.</p>
+            </details>
+            <details class="glass rounded-xl p-4">
+              <summary class="cursor-pointer font-semibold">How do I register?</summary>
+              <p class="mt-2 text-white/80">Tap any “Join” button to chat on WhatsApp at 07045052056 for fast onboarding.</p>
+            </details>
+            <details class="glass rounded-xl p-4">
+              <summary class="cursor-pointer font-semibold">When do I get credited?</summary>
+              <p class="mt-2 text-white/80">Most tasks credit instantly; some streaming jobs settle periodically based on activity windows.</p>
+            </details>
+            <details class="glass rounded-xl p-4">
+              <summary class="cursor-pointer font-semibold">How do I withdraw?</summary>
+              <p class="mt-2 text-white/80">Withdrawals are processed instantly to your NGN wallet when you reach the payout threshold.</p>
+            </details>
+            <details class="glass rounded-xl p-4">
+              <summary class="cursor-pointer font-semibold">Can I refer friends?</summary>
+              <p class="mt-2 text-white/80">Yes, Magnus offers transparent referrals that credit instantly when your invitees join and start tasks.</p>
+            </details>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="py-16">
+        <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-10">
+          <div class="glass rounded-2-5xl p-6 shadow-card">
+            <h2 class="text-2xl font-bold mb-4">Contact</h2>
+            <p class="text-white/80 mb-4">For Magnus Platform registration, chat <strong>07045052056</strong> on WhatsApp or use the button below.</p>
+            <a href="https://wa.me/2347045052056" class="inline-flex items-center gap-2 rounded-xl px-5 py-3 bg-magnus hover:bg-magnus2 transition shadow-glow font-semibold">Join Now</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-10 grid md:grid-cols-3 gap-6 text-sm">
+          <div>
+            <div class="flex items-center gap-3 mb-2">
+              <div class="w-9 h-9 rounded-xl overflow-hidden ring-1 ring-white/10">
+                <img src="MagnusLogo.jpg" alt="Magnus Logo" class="w-full h-full object-cover">
+              </div>
+              <span class="font-semibold">Magnus</span>
+            </div>
+            <p class="text-white/70">Trusted source for wealth creation.</p>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2">Contact</h4>
+            <p class="text-white/70">Phone: 07045052056</p>
+            <p class="text-white/70">Email: hello@magnus.example</p>
+            <p class="text-white/70">Address: Lagos, Nigeria</p>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2">Quick Links</h4>
+            <ul class="space-y-1 text-white/70">
+              <li><a href="#features" class="hover:text-magnus">Features</a></li>
+              <li><a href="#pricing" class="hover:text-magnus">Packages</a></li>
+              <li><a href="#faq" class="hover:text-magnus">FAQ</a></li>
+              <li><a href="#contact" class="hover:text-magnus">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center text-white/50 text-xs pb-8">© 2025 Magnus. All rights reserved.</div>
+      </footer>
+
+    </main>
+  </div>
+
+  <!-- Rotating Popup Reviews (10 items, every 10 seconds) -->
+  <style>
+    /* Brand-matched styling */
+    :root {
+      --magnus: #F97316;   /* magnus */
+      --magnus2:#F59E0B;   /* magnus2 */
+      --obsidian:#0B0B0F;  /* obsidian */
+      --onyx:    #0F172A;  /* onyx */
+    }
+    /* Smaller base (about 60% smaller overall footprint) */
+    .toast-wrap { pointer-events: auto; max-width: 12rem; } /* ~192px */
+    .toast-link { text-decoration: none; display: block; }
+    .toast-card {
+      background:
+        linear-gradient(135deg, rgba(249,115,22,.12), rgba(245,158,11,.10)),
+        rgba(15, 23, 42, .65); /* onyx/65 */
+      border-radius: 0.9rem;
+      padding: 0.55rem 0.65rem;
+      box-shadow: 0 0 35px rgba(249,115,22,.35);
+      border: 1px solid rgba(249,115,22,.35); /* magnus glow border */
+      display: flex;
+      gap: 0.55rem;
+      align-items: center;
+      transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    }
+    .toast-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 40px rgba(245,158,11,.45);
+      border-color: rgba(245,158,11,.55);
+    }
+    .toast-avatar { width: 24px; height: 24px; border-radius: 9999px; border: 1px solid rgba(255,255,255,.18); object-fit: cover; }
+    .toast-name { font-size: 12px; font-weight: 800; line-height: 1.1; color: #fff; }
+    .toast-text { font-size: 11px; color: rgba(255,255,255,.9); line-height: 1.25; white-space: normal; word-wrap: break-word; overflow: visible; }
+
+    /* Position */
+    #magnus-review-toast { position: fixed; bottom: 1rem; right: 1rem; left: auto; z-index: 100; }
+
+    /* Animation keyframes (varied intros/outros) */
+    @keyframes toastInFadeUp { 0% {opacity:0; transform: translateY(14px);} 100% {opacity:1; transform: translateY(0);} }
+    @keyframes toastInSlideLeft { 0% {opacity:0; transform: translateX(20px);} 100% {opacity:1; transform: translateX(0);} }
+    @keyframes toastInZoom { 0% {opacity:0; transform: scale(0.85);} 100% {opacity:1; transform: scale(1);} }
+    @keyframes toastInFlip { 0% {opacity:0; transform: rotateX(75deg);} 100% {opacity:1; transform: rotateX(0);} }
+    @keyframes toastInRotate { 0% {opacity:0; transform: rotate(-12deg) translateY(10px);} 100% {opacity:1; transform: rotate(0) translateY(0);} }
+
+    @keyframes toastOutFade { 0% {opacity:1;} 100% {opacity:0;} }
+    @keyframes toastOutSlideDown { 0% {opacity:1; transform: translateY(0);} 100% {opacity:0; transform: translateY(12px);} }
+    @keyframes toastOutZoom { 0% {opacity:1; transform: scale(1);} 100% {opacity:0; transform: scale(0.9);} }
+    @keyframes toastOutFlip { 0% {opacity:1; transform: rotateX(0);} 100% {opacity:0; transform: rotateX(-70deg);} }
+    @keyframes toastOutRotate { 0% {opacity:1; transform: rotate(0);} 100% {opacity:0; transform: rotate(10deg);} }
+  </style>
+  <div id="magnus-review-toast" class="pointer-events-none"></div>
+  <script>
+    (function() {
+      const reviews = [
+        {name: "Adaora E.", avatar: "https://i.pravatar.cc/80?img=1", text: "Magnus Platform paid me same day. Tasks are simple and real."},
+        {name: "Chukwu O.", avatar: "https://i.pravatar.cc/80?img=2", text: "Steady income from streaming jobs on Magnus Platform. I recommend it!"},
+        {name: "Fatima S.", avatar: "https://i.pravatar.cc/80?img=3", text: "Joined Magnus Platform last week — transparent credits and easy withdrawals."},
+        {name: "Ifeanyi K.", avatar: "https://i.pravatar.cc/80?img=4", text: "Magnus Platform boosted my side income. Referral tracking is so clean."},
+        {name: "Amina B.", avatar: "https://i.pravatar.cc/80?img=5", text: "Love the smartphone tasks on Magnus Platform — fast and fun to do!"},
+        {name: "Tunde A.", avatar: "https://i.pravatar.cc/80?img=6", text: "Magnus Platform support is responsive. Cash out to NGN wallet was instant."},
+        {name: "Ngozi M.", avatar: "https://i.pravatar.cc/80?img=7", text: "Real value. Magnus Platform credits come in as promised after tasks."},
+        {name: "Sule T.", avatar: "https://i.pravatar.cc/80?img=8", text: "My best earning app so far. Magnus Platform is legit and reliable."},
+        {name: "Blessing U.", avatar: "https://i.pravatar.cc/80?img=9", text: "Magnus Platform gave me daily streak bonuses — highly motivating!"},
+        {name: "Emeka J.", avatar: "https://i.pravatar.cc/80?img=10", text: "Clean UI, clear rules, and fast payouts on Magnus Platform."},
+      ];
+
+      const animIn = [
+        'toastInFadeUp 550ms ease forwards',
+        'toastInSlideLeft 550ms ease forwards',
+        'toastInZoom 520ms ease forwards',
+        'toastInFlip 600ms cubic-bezier(.2,.8,.2,1) forwards',
+        'toastInRotate 520ms ease-out forwards'
+      ];
+      const animOut = [
+        'toastOutFade 420ms ease forwards',
+        'toastOutSlideDown 420ms ease forwards',
+        'toastOutZoom 380ms ease forwards',
+        'toastOutFlip 420ms ease forwards',
+        'toastOutRotate 420ms ease forwards'
+      ];
+
+      const mount = document.getElementById('magnus-review-toast');
+      let idx = 0;
+      const intervalMs = 10000; // every 10 seconds
+      const visibleMs = 7000;   // show for 7 seconds
+
+      function createToast(item, i){
+        const wrap = document.createElement('div');
+        wrap.className = 'toast-wrap ml-auto';
+        const link = document.createElement('a');
+        link.href = 'https://wa.me/2347045052056';
+        link.target = '_blank';
+        link.rel = 'noopener';
+        link.className = 'toast-link';
+        const card = document.createElement('div');
+        card.className = 'toast-card';
+        card.innerHTML =
+          '<img class="toast-avatar" src=\"'+item.avatar+'\" alt=\"'+item.name+'\" />' +
+          '<div class=\"min-w-0\">' +
+            '<div class=\"toast-name\">'+item.name+'</div>' +
+            '<p class=\"toast-text\">'+item.text+'</p>' +
+          '</div>';
+        link.appendChild(card);
+        wrap.appendChild(link);
+        // assign animations
+        const inSel = animIn[i % animIn.length];
+        const outSel = animOut[i % animOut.length];
+        wrap.style.opacity = '0';
+        // trigger in
+        requestAnimationFrame(() => {
+          wrap.style.animation = inSel;
+        });
+        // plan out
+        setTimeout(() => {
+          wrap.style.animation = outSel;
+          setTimeout(() => wrap.remove(), 450);
+        }, visibleMs);
+        return wrap;
+      }
+
+      function showNext(){
+        const i = idx++;
+        const item = reviews[i % reviews.length];
+        const el = createToast(item, i);
+        mount.appendChild(el);
+      }
+
+      // start immediately, then every 10s
+      showNext();
+      setInterval(showNext, intervalMs);
+    })();
+  </script>
+
+
+  <!-- Unique intro/outro animations for all cards -->
+  <style>
+    /* Intro animations */
+    @keyframes cardInFadeUp {0%{opacity:0; transform: translateY(18px)}100%{opacity:1; transform: translateY(0)}}
+    @keyframes cardInSlideLeft {0%{opacity:0; transform: translateX(22px)}100%{opacity:1; transform: translateX(0)}}
+    @keyframes cardInSlideRight {0%{opacity:0; transform: translateX(-22px)}100%{opacity:1; transform: translateX(0)}}
+    @keyframes cardInZoom {0%{opacity:0; transform: scale(.92)}100%{opacity:1; transform: scale(1)}}
+    @keyframes cardInRotate {0%{opacity:0; transform: rotate(-6deg) scale(.98)}100%{opacity:1; transform: rotate(0) scale(1)}}
+    @keyframes cardInSkew {0%{opacity:0; transform: skewY(6deg) translateY(12px)}100%{opacity:1; transform: skewY(0) translateY(0)}}
+    @keyframes cardInFlip {0%{opacity:0; transform: rotateX(75deg)}100%{opacity:1; transform: rotateX(0)}}
+    @keyframes cardInPop {0%{opacity:.0; transform: scale(.85)}60%{opacity:1; transform: scale(1.03)}100%{transform: scale(1)}}
+
+    /* Outro animations */
+    @keyframes cardOutFade {0%{opacity:1;}100%{opacity:0;}}
+    @keyframes cardOutSlideDown {0%{opacity:1; transform: translateY(0)}100%{opacity:0; transform: translateY(14px)}}
+    @keyframes cardOutSlideLeft {0%{opacity:1; transform: translateX(0)}100%{opacity:0; transform: translateX(-16px)}}
+    @keyframes cardOutSlideRight {0%{opacity:1; transform: translateX(0)}100%{opacity:0; transform: translateX(16px)}}
+    @keyframes cardOutZoom {0%{opacity:1; transform: scale(1)}100%{opacity:0; transform: scale(.94)}}
+    @keyframes cardOutRotate {0%{opacity:1; transform: rotate(0)}100%{opacity:0; transform: rotate(6deg)}}
+    @keyframes cardOutSkew {0%{opacity:1; transform: skewY(0)}100%{opacity:0; transform: skewY(-6deg)}}
+    @keyframes cardOutFlip {0%{opacity:1; transform: rotateX(0)}100%{opacity:0; transform: rotateX(-70deg)}}
+
+    .card-anim { will-change: transform, opacity; }
+  </style>
+  <script>
+    (function(){
+      const sections = ['#features', '#intro-cards'];
+      const intro = [
+        'cardInFadeUp 600ms ease both',
+        'cardInSlideLeft 600ms ease both',
+        'cardInSlideRight 600ms ease both',
+        'cardInZoom 560ms ease both',
+        'cardInRotate 560ms ease-out both',
+        'cardInSkew 560ms ease both',
+        'cardInFlip 640ms cubic-bezier(.2,.8,.2,1) both',
+        'cardInPop 600ms ease-out both'
+      ];
+      const outro = [
+        'cardOutFade 420ms ease both',
+        'cardOutSlideDown 420ms ease both',
+        'cardOutSlideLeft 420ms ease both',
+        'cardOutSlideRight 420ms ease both',
+        'cardOutZoom 380ms ease both',
+        'cardOutRotate 400ms ease both',
+        'cardOutSkew 380ms ease both',
+        'cardOutFlip 420ms ease both'
+      ];
+
+      const cards = [];
+      sections.forEach(sel => {
+        const root = document.querySelector(sel);
+        if(!root) return;
+        root.querySelectorAll('.glass').forEach(el => {
+          if (el.hasAttribute('data-no-anim')) return;
+// Only animate visual cards (skip large containers by size heuristic)
+          const rect = el.getBoundingClientRect();
+          if (rect.height > 120 && rect.width > 220) {
+            el.classList.add('card-anim');
+            cards.push(el);
+          }
+        });
+      });
+
+      // Assign unique pairs per card
+      cards.forEach((el, i) => {
+        el.style.opacity = '0';
+        el.dataset.animIn = intro[i % intro.length];
+        el.dataset.animOut = outro[(i+3) % outro.length]; // offset for variety
+      });
+
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          const el = entry.target;
+          if (entry.isIntersecting) {
+            el.style.animation = el.dataset.animIn;
+          } else {
+            if (el.hasAttribute('')) return;
+            el.style.animation = el.dataset.animOut;
+          }
+        });
+      }, { threshold: 0.25 });
+
+      cards.forEach(el => io.observe(el));
+    })();
+  </script>
+
+
+  <script>
+    (function(){
+      const vids = document.querySelectorAll('video[title="Magnus preview 7"], video[title="Magnus preview 8"]');
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          const vid = entry.target;
+          if (entry.isIntersecting) {
+            vid.muted = false;
+            vid.play().catch(()=>{});
+          } else {
+            vid.pause();
+          }
+        });
+      }, {threshold: 0.5});
+      vids.forEach(v => io.observe(v));
+    })();
+  </script>
+
+</body>
+</html>
